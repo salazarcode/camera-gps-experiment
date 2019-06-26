@@ -11,7 +11,7 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/home.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -20,11 +20,24 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
+    "facebookScheme": "fb401931543750381",
+    "facebookAppId": "401931543750381",
+    "facebookDisplayName": "camara-gps-login",
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.freelancer.camaragpslogin",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.797683055907-6ftmuc5rnkg0isfc7s0dfbju35bj96r6"
+        }
+      }
+    },
+    "android": {
+      "package": "com.freelancer.camaragpslogin",
+      "googleServicesFile": "./google-services.json"
     },
     "description": "Aplicación experimental donde implementé exitosamente el GPS y la cámara.",
     "githubUrl": "https://github.com/salazarcode/camara-con-gps"

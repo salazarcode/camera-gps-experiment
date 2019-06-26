@@ -40,7 +40,12 @@ class Position extends React.Component{
     }
 
     let location = await Location.getCurrentPositionAsync({});
-    this.setState({ latitude: location.coords.latitude, longitude: location.coords.longitude, isLoading: false });
+    
+    this.setState({ 
+      latitude: location.coords.latitude, 
+      longitude: location.coords.longitude, 
+      isLoading: false 
+    });
   };
 
   _handlePicture(picture){
